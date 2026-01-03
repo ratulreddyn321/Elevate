@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elevate </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background-color: #0a7d3b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #064f26;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #0a7d3b;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px black;
+    }
+    .hero h1 {
+      font-size: 42px;
+    }
+    .container {
+      padding: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .card h3 {
+      margin: 15px 0 10px;
+    }
+    .card p {
+      font-size: 14px;
+    }
+    .card button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #0a7d3b;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .card button:hover {
+      background-color: #064f26;
+    }
+    footer {
+      background-color: #064f26;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Elevate </h1>
+    <p>Your one-stop shop for quality football gear</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Play Hard. Play Safe.</h1>
+  </section>
+
+  <section class="container" id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606925797300-0b35e9d1794e" alt="Football" />
+        <h3>Professional Football</h3>
+        <p>Durable match-quality football suitable for all surfaces.</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600185365483-26d7b1f0c74c" alt="Shin Guards" />
+        <h3>Shin Pads</h3>
+        <p>Lightweight and strong shin pads for maximum protection.</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d" alt="Football Socks" />
+        <h3>Football Stockings</h3>
+        <p>Comfortable and breathable stockings for long matches.</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="about">
+    <h2>About Us</h2>
+    <p>
+      Elevate is dedicated to providing high-quality football equipment for players of all levels. 
+      Our mission is to help you perform better while staying safe on the field.
+    </p>
+  </section>
+
+  <section class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@elevate.com</p>
+    <p>Phone: +91 98765 43210</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Elevate. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
